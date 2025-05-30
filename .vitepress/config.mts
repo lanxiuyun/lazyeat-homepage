@@ -20,8 +20,6 @@ export default defineConfig({
 
   // 注册全局组件
   vite: {
-    ssr: {
-      noExternal: ["DemoShowcase"],
-    },
+    ssr: {},
   },
 });

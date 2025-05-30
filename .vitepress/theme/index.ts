@@ -3,8 +3,6 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
-import DemoShowcase from "./components/DemoShowcase.vue";
-import ShortcutShowcase from "./components/ShortcutShowcase.vue";
 
 export default {
   extends: DefaultTheme,
@@ -14,7 +12,5 @@ export default {
     });
   },
   enhanceApp({ app, router, siteData }) {
-    app.component("DemoShowcase", DemoShowcase);
-    app.component("ShortcutShowcase", ShortcutShowcase);
   },
 } satisfies Theme;
